@@ -7,15 +7,15 @@
         <script src="alloy.js"></script>
     </head>
     <body style="text-align: center;">
-        <div id="content">   
+        <div id="content">
             <h3>Alloy Calculator</h3>
             <label>Grain Weight (dwt):</label>
-            <input type="number" min=0 max=10000 step="0.001" id="grain"/>
+            <input onkeypress="pressEnter(event)" type="number" min=0 max=10000 step="0.001" id="grain"/>
             <label>Alloy Weight (dwt):</label>
-            <input type="number" min=0 max=10000 step="0.001" id="alloy"/>
+            <input onkeypress="pressEnter(event)" type="number" min=0 max=10000 step="0.001" id="alloy"/>
             <label>Target % (< 1):</label>
-            <input type="number" min=0 max=10000 step="0.001" id="percent"/>
-            <img src="process_button.png" id="button" onclick="getThird()">
+            <input onkeypress="pressEnter(event)" type="number" min=0 max=10000 step="0.001" id="percent"/>
+            <img src="process_button.png" id="button" onclick="process()">
             <img src="clear_button.png" id="clear" onclick="clearFields()">
         </div>
     </body>

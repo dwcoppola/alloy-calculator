@@ -1,17 +1,11 @@
-// A = (G - PG) / P
-// P = G / (G + A)
-// G = PA / (1 - P)
+/* 
+The math:
+A = (G - PG) / P
+P = G / (G + A)
+G = PA / (1 - P)
+*/
 
-function clearFields() {
-    alloy = document.getElementById('alloy');
-    grain = document.getElementById('grain');
-    percent = document.getElementById('percent'); 
-    alloy.value = "";
-    grain.value = "";
-    percent.value = "";
-}
-
-function getThird() {
+function process() {
     alloy = document.getElementById('alloy');
     grain = document.getElementById('grain');
     percent = document.getElementById('percent');    
@@ -30,5 +24,22 @@ function getThird() {
         g = Number(grain.value);
         p = g / (g + a);
         percent.value = Number(p).toFixed(3);
+    }    
+}
+
+function clearFields() {
+    alloy = document.getElementById('alloy');
+    grain = document.getElementById('grain');
+    percent = document.getElementById('percent'); 
+    alloy.value = "";
+    grain.value = "";
+    percent.value = "";
+    grain.focus();
+}
+
+function pressEnter(event) {
+    if (event.which === 13 || event.keyCode === 13) {
+        process();
+    } else {
     }
 }
