@@ -1,45 +1,42 @@
 html {
-    /*background-image: url("moltenmetal.jpg");*/
+    background-image: url("blue.jpg");
     background-repeat: no-repeat;
-    background-size: 115%;
-    background-color: rgba(140, 146, 146, 0.692);
+    background-size: 300%;
+    /*background-color: #276678;*/
+    font-family: arial;
 }
 body {
-    color: rgba(32, 32, 31, 0.815);
+    color: #d3e0ea;
     padding: 1em;
 }
 #content {
     width: 312px;
     height: 567px;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    padding: 1em;
-    margin-right: auto;
-    margin-left: auto;
-}
 h3 {
-    color: #000000;
+    color: #d3e0ea;
     font-size: 1.5em;
 }
 label{
     font-size: 1.5em;
     font-weight: bold;
+    margin-bottom: .2em;
 }
-input {
-    width: 275px;
-    height: 75px;
+input, select {
+    width: 250px;
+    height: 60px;
     margin-bottom: .5em;
     font-size: 3em;
-    background-color: #cebe9b99;
-    color: #faf5f5;
+    background-color: #d3e0ea;
+    color: #154fb9;
     text-align: center;
 }
+input:focus {
+    outline: #d3e0e1 solid 2px;
+}
 button {
-    width: 140px;
-    height: 75px;
-    background-color: rgb(192, 169, 128);
-    margin-top: .5em;
+    width: 130px;
+    height: 60px;
+    background-color: #d3e0ea;
     font-size: 2em;
 }
