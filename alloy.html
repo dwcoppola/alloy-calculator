@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Alloy Calculator</title>
+        <link rel="stylesheet" type="text/css" href="alloy.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="alloy.js"></script>
+    </head>
+    <body style="text-align: center;">
+        <div id="content">   
+            <h3>Enter at least 2 values</h3>
+            <label>Grain Weight (dwt):</label>
+            <input type="number" min=0 max=10000 step="0.001" id="grain"/>
+            <label>Alloy Weight (dwt):</label>
+            <input type="number" min=0 max=10000 step="0.001" id="alloy"/>
+            <label>Target %:</label>
+            <input type="number" min=0 max=10000 step="0.001" id="percent"/>
+            <button id="button" onclick="getThird()">Process</button>
+            <button id="clear" onclick="clearFields()">Clear</button>
+        </div>
+    </body>
+</html>
