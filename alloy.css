@@ -17,6 +17,10 @@ body {
 h3 {
     color: #d3e0ea;
     font-size: 1.5em;
+    margin-bottom: 5px;
+}
+P {
+    margin-top: 5px;
 }
 label{
     font-size: 1.5em;

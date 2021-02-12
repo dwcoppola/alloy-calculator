@@ -12,11 +12,17 @@ function process() {
     if (alloy.value === "") {
         g = Number(grain.value);
         p = Number(percent.value);
+        if (p > 1) {
+            p = p/100
+        }
         a = (g - (p * g)) / p;
         alloy.value = Number(a).toFixed(3);
     } else if (grain.value === "") {
         a = Number(alloy.value);
         p = Number(percent.value);
+        if (p > 1) {
+            p = p/100
+        }
         g = (p * a) / (1 - p);
         grain.value = Number(g).toFixed(3);
     } else if (percent.value === "") {
