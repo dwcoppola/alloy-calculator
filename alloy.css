@@ -34,9 +34,7 @@ input, select {
 input:focus {
     outline: #d3e0e1 solid 2px;
 }
-button {
+img {
     width: 130px;
     height: 60px;
-    background-color: #d3e0ea;
-    font-size: 1.5em;
 }
