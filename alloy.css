@@ -12,6 +12,8 @@ body {
 #content {
     width: 312px;
     height: 567px;
+    margin-right: auto;
+    margin-left: auto;
 }
 h3 {
     color: #d3e0ea;
