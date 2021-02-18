@@ -10,14 +10,15 @@
         <div id="content">
             <h3>Alloy Calculator</h3>
             <p>Fill out Alloy or Grain & Target %</p>
-            <label>Grain Weight (fine):</label>
-            <input onkeypress="pressEnter(event)" type="number" min=0 max=10000 step="0.001" id="grain"/>
+            <label>Grain Weight:</label>
+            <input onkeypress="pressEnterIndex(event)" type="number" min=0 max=10000 step="0.001" id="grain"/>
             <label>Alloy Weight:</label>
-            <input onkeypress="pressEnter(event)" type="number" min=0 max=10000 step="0.001" id="alloy"/>
+            <input onkeypress="pressEnterIndex(event)" type="number" min=0 max=10000 step="0.001" id="alloy"/>
             <label>Target %:</label>
-            <input onkeypress="pressEnter(event)" type="number" min=0 max=10000 step="0.001" id="percent"/>
-            <img src="process_button.png" id="button" onclick="process()">
-            <img src="clear_button.png" id="clear" onclick="clearFields()">
+            <input onkeypress="pressEnterIndex(event)" type="number" min=0 max=10000 step="0.001" id="percent"/>
+            <img src="images/process_button.png" id="button" onclick="processIndex()">
+            <img src="images/clear_button.png" id="clear" onclick="clearFields()">
+            <a href="mixer.html"><img src="images/to_mixer.png" id="back"></a>
         </div>
     </body>
 </html>

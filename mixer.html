@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Alloy Mix Calculator</title>
+        <link rel="stylesheet", type="text/css", href="alloy.css">
+        <script src="alloy.js"></script>
+    </head>
+    <body>
+        <div id="content">
+            <h3>Alloy Mixer</h3>
+            <p>You provide mix info and I return how much alloy you need</p>
+            <label for="new-weight">Weight (50% of New):</label>
+            <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="new-weight"/>
+            <label for="new-percent">Purity (New):</label>
+            <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="new-percent">
+            <label>Weight (50% of Old):</label>
+            <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="old-weight">
+            <label>Purity (Old):</label>
+            <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="old-percent">
+            <label>Target Purity:</label>
+            <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="target-percent">
+            <label>Alloy Needed:</label>
+            <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="need">
+            <img src="images/process_button.png" id="button" onclick="processMixer()">
+            <img src="images/clear_button.png" id="clear" onclick="clearMixerFields()">
+            <a href="index.html"><img src="images/back_button.png" id="back"></a>
+        </div>
+    </body>
+</html>

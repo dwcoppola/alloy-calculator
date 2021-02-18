@@ -1,15 +1,15 @@
 html {
-    background-image: url("blue.jpg");
+    background-image: url("images/blue.jpg");
     background-repeat: no-repeat;
     font-family: arial;
 }
 body {
     color: #d3e0ea;
     padding: 1em;
+    text-align: center;
 }
 #content {
     width: 312px;
-    height: 567px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -39,6 +39,9 @@ input:focus {
     outline: #d3e0e1 solid 2px;
 }
 img {
-    width: 130px;
+    width: 126px;
     height: 60px;
+}
+#back {
+    width: 258px;
 }
