@@ -39,7 +39,7 @@ function clearFields() {
     percent = document.getElementById('percent'); 
     alloy.value = "";
     grain.value = "";
-    percent.value = "";
+    percent.value = "0.752";
     grain.focus();
 }
 
@@ -51,7 +51,7 @@ function pressEnterIndex(event) {
 }
 
 /* 
-The Math:
+The math:
 NEED = ( (Target% * Total Weight) - Old Alloy Weight - New Alloy Weight ) / ( 1 - target )
 */
 
@@ -90,7 +90,7 @@ function clearMixerFields() {
     newPercent.value = ""
     oldWeight.value = ""
     oldPercent.value = ""
-    targetPercent.value = ""
+    targetPercent.value = "0.752"
     need.value = ""
     newWeight.value = ""
 }
