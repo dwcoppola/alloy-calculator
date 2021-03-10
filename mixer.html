@@ -13,16 +13,34 @@
             <p>You provide mix info and I return how much alloy you need</p>
             <label for="new-weight">Weight (50% of New):</label>
             <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="new-weight"/>
+            <div class="tooltip"><b>?</b>
+                <span class="tooltiptext">This is the weight of your first/new mix</span>
+            </div>
             <label for="new-percent">Purity (New):</label>
             <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="new-percent">
+            <div class="tooltip"><b>?</b>
+                <span class="tooltiptext">This is the purity of your first/new mix</span>
+            </div>
             <label>Weight (50% of Old):</label>
             <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="old-weight">
+            <div class="tooltip"><b>?</b>
+                <span class="tooltiptext">This is the weight of your second/old mix</span>
+            </div>
             <label>Purity (Old):</label>
             <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="old-percent">
+            <div class="tooltip"><b>?</b>
+                <span class="tooltiptext">This is the purity of your second/old mix</span>
+            </div>
             <label>Target Purity:</label>
             <input value="0.752" onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="target-percent">
+            <div class="tooltip"><b>?</b>
+                <span class="tooltiptext">This is the purity you want for the final mix</span>
+            </div>
             <label>Alloy Needed:</label>
             <input onkeypress="pressEnterMixer(event)" type="number" min="0.000" step="0.001" id="need">
+            <div class="tooltip"><b>?</b>
+                <span class="tooltiptext">This is how much alloy to add in order to get the desired purity</span>
+            </div>
             <img src="images/process_button.png" id="button" onclick="processMixer()">
             <img src="images/clear_button.png" id="clear" onclick="clearMixerFields()">
             <a href="index.html"><img src="./images/back.png" id="back"></a>
